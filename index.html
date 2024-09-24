@@ -53,6 +53,9 @@
         Campbell McCready | <a href="https://www.linkedin.com/in/campbell-mccready-809577327/">LinkedIn</a> | <a
             href="https://www.github.com/Campbell-McCready">GitHub</a>
     </p>
+
+    <!-- WEEK 1 start -->
+
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
         Week 1: Hosting someone elses visualisation
     </h3>
@@ -68,26 +71,14 @@
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
-
-
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
+
 
         let figure_1_spec = "fig1_obesity.json"; // We're storing the URL of the graph we want to display in a variable
                                                                                                                     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
 
         </script>
 
@@ -126,6 +117,8 @@
     vegaEmbed('#Location3', figure_3_spec)
 
 </script>
+
+      <!-- WEEK 1 end -->
 
 
 
