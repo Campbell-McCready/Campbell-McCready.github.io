@@ -58,7 +58,7 @@
             href="https://www.github.com/Campbell-McCready">GitHub</a>
     </p>
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        The UK has had a growing obesity problem in recent year, which is leading to negative impacts on society and the NHS.
+        The UK has had a growing obesity problem in recent years, with nearly one in every three adults being obese, which is leading to negative impacts on society and the NHS.
     </h3>
 
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
@@ -66,7 +66,7 @@
         <div class="chart-description">
             <h2>Figure 1: A graph showing how obesity has risen in the UK since 1992 </h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We can see below that obesity has risen dramatically, increasing from 15% to 28% in the last two decades.
+                We can see below that obesity has risen dramatically, increasing from 15% to 28% in the last two decades. 
             </p>
         </div>
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -97,8 +97,8 @@
 
  <section>
         <div class="chart-description">
-            <h2>Figure 2: A graph showing how deprivation is linked to obesity.</h2>
-            <p> 
+            <h2>Figure 2: A graph showing how obesity is more prevelant in deprived areas.</h2>
+            <p> Obesity is also more prevelant in disadvantaged parts of the country, figure 2 shows this, with 10 being the most deprived and 1 being the least:
             </p>
         </div>
         <figure id="Location2"></figure> 
@@ -116,7 +116,7 @@
 <section>
     <div class="chart-description">
         <h2>Figure 3: A graph showing how hospitalisations have increased alongside obesity.</h2>
-        <p> 
+        <p> Figure 3 visualises the stress that obesity is putting on the NHS, the number of hospital episodes related to obesity has more than tripled since 2011.
         </p>
     </div>
     <figure id="Location3"></figure> 
@@ -127,6 +127,14 @@
 
     let figure_3_spec = "fig4_hospitalisation.json"; 
                                                                                                               
-    vegaEmbed('#Location2', figure_3_spec)
+    vegaEmbed('#Location3', figure_3_spec)
 
 </script>
+
+
+
+
+
+</body>
+    
+</html>
