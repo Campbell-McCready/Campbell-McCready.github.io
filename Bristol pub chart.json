@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {"Local Constituency": "Ashley", "Number of pubs": 30},
+      {"Local Constituency": "Central", "Number of pubs": 146},
+      {"Local Constituency": "Clifton", "Number of pubs": 15},
+      {"Local Constituency": "Clifton Down", "Number of pubs": 44},
+      {"Local Constituency": "Cotham", "Number of pubs": 15},
+      {"Local Constituency": "Hotwells", "Number of pubs": 27},
+      {"Local Constituency": "Redland", "Number of pubs": 30}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Local Constituency",
+      "type": "nominal",
+      "axis": {"labelAngle": -90}
+    },
+    "y": {"field": "Number of pubs", "type": "quantitative"}
+  },
+  "config": {}
+}
