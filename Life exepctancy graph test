@@ -12,7 +12,7 @@
     "mark":{"type": "line","color":"red"},
  
     "encoding": {
-      "x": {"field": "year","type": "temporal","axis": {"grid": false}},
-      "y": {"field": "life_exp","type": "quantitative"}
+      "x": {"field": "year","type": "temporal","title": "Year","axis": {"grid": false}},
+      "y": {"field": "life_exp","type": "quantitative","title": "Life expectancy","scale":{"domain":[60, 90]},}
     }
 }
