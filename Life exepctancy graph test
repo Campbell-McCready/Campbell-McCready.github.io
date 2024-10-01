@@ -1,9 +1,10 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "data": {
-       "url": "https://raw.githubusercontent.com/Campbell-McCready/Campbell-McCready.github.io/main/charts/library/life-expectancy-vs-gdp-per-capita (1)(life-expectancy-vs-gdp-per-capi).csv"},
+       "url": "Campbell-McCready.github.io/life-expectancy-vs-gdp-per-capita (1)(life-expectancy-vs-gdp-per-capi).csv"},
 
-    "title": {"text": "UK Productivity 1960-2023"},
+    "title": {"text": "UK Productivity 1960-2023",
+    "subtitle": "bleh"},
 
     "width":300,
     "height":300,
