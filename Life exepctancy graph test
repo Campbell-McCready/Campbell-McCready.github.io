@@ -11,7 +11,7 @@
     "mark":{"type": "line","color":"red"},
  
     "encoding": {
-      "x": {"field": "Year","type": "temporal"},
-      "y": {"field": "outputPerWorker","type": "quantitative"}
+      "x": {"field": "year","type": "temporal"},
+      "y": {"field": "life_exp","type": "quantitative"}
     }
 }
