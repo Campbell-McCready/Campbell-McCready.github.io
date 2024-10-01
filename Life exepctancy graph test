@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "data": {
-       "url": "Campbell-McCready.github.io/life-expectancy-vs-gdp-per-capita (1)(life-expectancy-vs-gdp-per-capi).csv"},
+       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main"},
 
     "title": {"text": "UK life expectancy 1950 - 2022 ",
     "subtitle": "bleh"},
