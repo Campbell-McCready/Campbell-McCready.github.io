@@ -10,7 +10,7 @@
     "width":300,
     "height":300,
 
-    "mark":{"type": "line","color":"red"},
+    "mark":{"type": "line","color":"blue"},
  
     "encoding": {
       "x": {"field": "Year","type": "temporal"},
