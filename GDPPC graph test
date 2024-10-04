@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "data": {
-       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/GDPPC test updated.csv"},
+       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/GDPPC update.csv"},
 
     "title": {"text": "UK GDP per capita 1950 - 2022 ",
     "subtitle": "Using data from the ONS"},
