@@ -13,6 +13,6 @@
  
     "encoding": {
       "x": {"field": "year","type": "temporal","title": "Year","axis": {"grid": false}},
-      "y": {"field": "life_exp","type": "quantitative","title": "Life expectancy","scale":{"domain":[60, 90]},
+      "y": {"field": "life_exp","type": "quantitative","title": "Life expectancy","scale":{"domain":[60, 90]},}
     }
 }
