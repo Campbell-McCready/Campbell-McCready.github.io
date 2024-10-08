@@ -1,0 +1,20 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/consumertrendsq22024cpsa1_long.csv"},
+
+    "title": {
+    "text": "Consumer spending",
+    "subtitle": ["Goods and services spending"]},
+
+    "width":300,
+    "height":300,
+
+    "mark":{"type": "line","color":"red"},
+ 
+    "encoding": {
+      "x": {"field": "date","type": "quantitative"},
+      "y": {"field": "value","type": "quantitative"},
+      "color": {"field": "series"}
+    }
+}
