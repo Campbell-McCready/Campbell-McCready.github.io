@@ -1,0 +1,18 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/life-expectancy-vs-gdp-per-capita (1)(life-expectancy-vs-gdp-per-capi).csv"},
+
+    "title": {"text": "UK life expectancy 1950 - 2022 ",
+    "subtitle": "Using data from the ONS"},
+
+    "width":300,
+    "height":300,
+
+    "mark":{"type": "line","color":"red"},
+ 
+    "encoding": {
+      "x": {"field": "year","type": "temporal","title": "Year","axis": {"grid": false}},
+      "y": {"field": "life_exp","type": "quantitative","title": "Life expectancy","scale":{"domain":[60, 90]},}
+    }
+}
