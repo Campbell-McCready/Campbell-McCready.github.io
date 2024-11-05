@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Global Life Expectancy",
+    "subtitle": [
+      "Source: World Bank January 1st 2021",
+      ""
+    ],
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "subtitleFontWeight": "lighter",
+    "anchor": "middle"
+  },
+  "description": "2021 World Bank data, Life expectancy per country.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/map_world.geojson",
+    "format": {"property": "features"}
+  },
+  "width": 600,
+  "height": 330,
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "key": "ISO3",
+        "fields": ["country", "value"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/world_life_expectancy_wb.csv"
+        }
+      }
+    }
+  ],
+  "projection": {
+    "type": "naturalEarth1",
+    "scale": 125,
+    "translate": [285, 180]
+  },
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+  "encoding": {
+    "color": {
+      "condition": {"value": "lightgrey", "test": "!datum['value']"},
+      "field": "value",
+      "type": "quantitative",
+      "legend": {"title": "", "format": "d"},
+      "scale": {"type": "log", "scheme": "lighttealblue", "reverse": false}
+    },
+    "tooltip": [
+      {"field": "country", "title": "Country"},
+      {"field": "value", "title": "Age", "format": "d"}
+    ]
+  }
+}
