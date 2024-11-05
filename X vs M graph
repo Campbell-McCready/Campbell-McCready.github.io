@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/XMdata.csv"},
+  "width":450,
+  "height":300,
+  "mark":{ 
+  "type": "line",
+  "strokeWidth":1.2},
+
+  "transform": [{"filter": "datum.Symbol!='Nettrade'"}],
+
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Value", "type": "quantitative", "scale":{"domain":[15000, 85000]}},
+    "color": {"field": "Symbol", "type": "nominal"}
+  }
+}
