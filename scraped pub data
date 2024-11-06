@@ -1,0 +1,34 @@
+from bs4 import BeautifulSoup
+import requests
+
+url = "https://www.pubsgalore.co.uk/stats/photos-counties.php"
+
+page = requests.get(url)
+
+soup = BeautifulSoup(page.text, 'html')
+
+table = soup.find_all('table', class_ = 'display')
+
+titles = soup.find_all('th')
+
+table_titles = [title.text.strip() for title in titles]
+
+import pandas as pd
+
+df = pd.DataFrame(columns = table_titles)
+
+column_data = soup.find_all('tr')
+
+df = df.iloc[:, :-1] 
+
+for row in column_data[2:]:
+    row_data = row.find_all('td')
+    individual_row_data = [data.text.strip() for data in row_data]
+
+    length = len(df)
+    df.loc[length] = individual_row_data
+  
+    columns_to_keep = ['County', 'Open Pubs']
+    filtered_df = df[columns_to_keep]
+  
+print (filtered_df)
