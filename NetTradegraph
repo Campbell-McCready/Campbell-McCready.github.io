@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/XMdata.csv"},
+    "title": {
+      "text": "UK's Trade balance, 1997-2024",
+      "subtitle":["Data from the ONS, measured in £1000's", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitlePadding":5,
+      "anchor": "start",
+      "color": "black"},
+  "layer": [
+  {
+  "width":600,
+  "height":300,
+  "mark":{ 
+  "type": "line",
+  "color": "green",
+  "strokeWidth":1.5},
+
+  "transform": [{"filter": "datum.Symbol!='UKimports'"},
+                {"filter": "datum.Symbol!='UKexports'"}],
+
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Value", "type": "quantitative",
+    "scale":{"domain":[-10000, 10000]},
+    "color": {
+  "field": "Value",
+  "type":"quantative",
+  "scale": {"range":["#ff0000","#00FF00"]}
+
+    }
+    }}},
+
+{
+    "mark": { "type": "rule", "color": "black", "size": 1.2, },
+    "encoding": {"y": {"datum": 0}},
+  },
+
+]}
