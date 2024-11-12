@@ -9,33 +9,40 @@
       "subtitlePadding":5,
       "anchor": "start",
       "color": "black"},
-  "layer": [
-  {
   "width":600,
   "height":300,
-  "mark":{ 
-  "type": "line",
-  "color": "green",
-  "strokeWidth":1.5},
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth":1.5
+      },
 
-  "transform": [{"filter": "datum.Symbol!='UKimports'"},
-                {"filter": "datum.Symbol!='UKexports'"}],
 
-  "encoding": {
-    "x": {"field": "Year", "type": "temporal"},
-    "y": {"field": "Value", "type": "quantitative",
-    "scale":{"domain":[-10000, 10000]},
-    "color": {
-  "field": "Value",
-  "type":"quantative",
-  "scale": {"range":["#ff0000","#00FF00"]}
+      "transform": [{"filter": "datum.Symbol!='UKimports'"},
+                    {"filter": "datum.Symbol!='UKexports'"}],
 
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale":{"domain":[-10000, 10000]}
+        },
+        "color": {
+          "condition": {
+            "test": "datum.Value > 0",
+            "value": "green"
+          },
+          "value": "red"
+
+      }
     }
-    }}},
+    },
+  {
+    "mark": { "type": "rule", "color": "black", "size": 1.2},
+    "encoding": {"y": {"datum": 0}}
+  }
 
-{
-    "mark": { "type": "rule", "color": "black", "size": 1.2, },
-    "encoding": {"y": {"datum": 0}},
-  },
-
-]}
+  ]
+}
