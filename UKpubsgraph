@@ -14,8 +14,8 @@
       "background":"white",
       "view": {"stroke": "transparent"}},
   
-  "width": 160,
-  "height": 300,
+  "width": 320,
+  "height": 600,
   "transform": [
     {
       "lookup": "properties.ITL121NM",
