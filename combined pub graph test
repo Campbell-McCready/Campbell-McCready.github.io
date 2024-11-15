@@ -1,0 +1,115 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+ "hconcat": [
+  {  "description": "The number of open pubs in each region of the UK.",
+
+  "title": {
+    "text": "Number of pubs in each region of the UK",
+    "subtitle":["Using data from Pubs Galore and the ONS",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"},
+
+  "config": {
+      "background":"white",
+      "view": {"stroke": "transparent"}},
+  
+  "width": 160,
+  "height": 300,
+  "transform": [
+    {
+      "lookup": "properties.ITL121NM",
+      "from": {
+      "key": "ITL121NM",
+      "fields": ["ITL121NM", "Value"],
+      "data": {
+        "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/pub_data_raw(edited)(in)(1).csv"
+      }
+    }
+    }
+  ],
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL1_2021_20m.geojson",
+        "format": {"property": "features"}},
+
+  "projection": {"type": "mercator"},
+  
+  "mark": {
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth":0.5},
+
+  "encoding": {
+    "tooltip": [ 
+      {"field": "properties.ITL121NM",
+      "title": "Region"},
+      {"field": "Value",
+      "title": "Number of pubs"}],
+    "color": {
+    "field": "Value",
+    "type": "quantitative",
+    "scale": {"scheme": "oranges"},
+    "legend": {
+        "title": "boo 1"}}
+  }
+},
+{
+
+  "description": "The number of pubs in each region of the UK per capita (multiplied by 10^4)",
+
+  "title": {
+    "text": "Number of pubs in each region of the UK (per capita)",
+    "subtitle":["multiplied by 10^4, using data from Pubs Galore and the ONS",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"},
+
+  "config": {
+      "background":"white",
+      "view": {"stroke": "transparent"}},
+  
+  "width": 160,
+  "height": 300,
+  "transform": [
+    {
+      "lookup": "properties.ITL121NM",
+      "from": {
+      "key": "ITL121NM",
+      "fields": ["ITL121NM", "ValuePC"],
+      "data": {
+        "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/pub_data_PC.csv"
+      }
+    }
+    }
+  ],
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL1_2021_20m.geojson",
+        "format": {"property": "features"}},
+
+  "projection": {"type": "mercator"},
+  
+  "mark": {
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth":0.5},
+
+  "encoding": {
+    "tooltip": [ 
+      {"field": "properties.ITL121NM",
+      "title": "Region"},
+      {"field": "ValuePC",
+      "title": "Number of pubs per capita"}],
+    "color": {
+    "field": "ValuePC",
+    "type": "quantitative",
+    "scale": {"scheme": "greens"},
+    "legend": {
+        "title": "boo 2"}}
+  }
+  },
+  ]
+}
