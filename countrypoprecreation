@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Countries ranked by population 2020"
+  "description": "Countries ranked by population 2020",
   "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/countrypop.csv"
   },
   "mark": "arc",
