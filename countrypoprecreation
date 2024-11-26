@@ -8,10 +8,5 @@
     "theta": {"field": "Value", "type": "quantitative"},
     "color": {"field": "Country", "type": "nominal"},
     "order": {"field": "Value", "type": "quantitative", "sort": "descending"},
-    "tooltip": [ 
-      {"field": "Country",
-      "title": "Country"},
-      {"field": "Value",
-      "title": "Population"}]
   }
 }
