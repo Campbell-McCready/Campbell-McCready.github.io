@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple pie chart with embedded data.",
+  "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/improvedcountrypop.csv"
+  },
+  "title": "The 10 countries with the largest populations",
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Country", "type": "nominal"},
+    "order": {"field": "Value", "type": "quantitative", "sort": "descending"},
+    "tooltip": [ 
+      {"field": "Country",
+      "title": "Country"},
+      {"field": "Value",
+      "title": "Population"}]
+  }
+}
