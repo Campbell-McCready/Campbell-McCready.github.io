@@ -7,6 +7,6 @@
   "encoding": {
     "theta": {"field": "Value", "type": "quantitative"},
     "color": {"field": "Country", "type": "nominal"},
-    "order": {"field": "Value", "type": "quantitative", "sort": "descending"},
+    "order": {"field": "Value", "type": "quantitative", "sort": "descending"}
   }
 }
