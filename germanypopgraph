@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Population of Germany by state ",
+    "subtitle": ["Data taken from the Federal Statistical Office of Germany"],
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/AliceWi/TopoJSON-Germany/refs/heads/master/germany.json",
+    "format": {"type": "topojson", "feature": "states"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/germanypopdata.csv"
+        },
+        "key": "States",
+        "fields": ["Value"]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "type": "quantitative",
+      "scale": {"scheme": "greens"}},
+    "tooltip": [{"field": "properties.name", "type": "nominal", "title": "State"}, {"field": "Value", "type": "quantitative", "title": "Population"}]
+  },
+  "config": {}
+}
