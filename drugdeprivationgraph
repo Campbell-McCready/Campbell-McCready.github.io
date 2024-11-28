@@ -1,1 +1,49 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
+  "description": "Various US measures state by state",
+
+  "title": {
+    "text": "Gun deaths and income - US states",
+    "subtitle":["Median income (x), and firearm deaths per 100k population (y)",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/drugdeprivationdata.csv",
+    "format":{"type":"csv"}},
+
+  "mark": {
+    "type":"circle",
+    "size":150,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6},
+  
+  "height": 300,
+  "width": 600,
+
+
+
+  "encoding": {
+
+      "tooltip":[
+        {"field":"Location", "type": "nominal", "title":"Location"},
+        {"field":"deaths", "type": "quantitative", "title":"Number of drug poisoning deaths"},
+        {"field":"Income deprivation", "type": "quantitative", "title":"Income Deprivation"}
+      ],
+
+    "x": {
+      "field": "Income deprivation", 
+      "type": "quantitative",
+      "title":null
+      },
+
+    "y": {
+      "field": "deaths", 
+      "type": "quantitative",
+      "title":null
+      }
+   }
+}
