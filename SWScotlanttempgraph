@@ -6,15 +6,6 @@
       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/SWtempcleaneddata.csv"
   },
   "title": "Daily Average Temperatures (C) in the South West, UK",
-  "config": {
-      "view": {
-          "strokeWidth": 0,
-          "step": 13
-      },
-      "axis": {
-          "domain": false
-      }
-  },
   "mark": "rect",
   "encoding": {
       "y": {
@@ -23,7 +14,7 @@
           "type": "ordinal",
           "title": "Month",
           "axis": {
-              "labelAngle": 0,
+              "labelAngle": 0
           }
       },
       "x": {
@@ -47,15 +38,6 @@
       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/Scotlandtempdata.csv"
   },
   "title": "Daily Average Temperatures (C) in North Scotland, UK",
-  "config": {
-      "view": {
-          "strokeWidth": 0,
-          "step": 13
-      },
-      "axis": {
-          "domain": false
-      }
-  },
   "mark": "rect",
   "encoding": {
       "y": {
@@ -64,7 +46,7 @@
           "type": "ordinal",
           "title": "Month",
           "axis": {
-              "labelAngle": 0,
+              "labelAngle": 0
           }
       },
       "x": {
