@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "vconcat":[
+  {"data": {
+      "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/SWtempcleaneddata.csv"
+  },
+  "title": "Daily Average Temperatures (C) in the South West, UK",
+  "config": {
+      "view": {
+          "strokeWidth": 0,
+          "step": 13
+      },
+      "axis": {
+          "domain": false
+      }
+  },
+  "mark": "rect",
+  "encoding": {
+      "y": {
+          "field": "Date",
+          "timeUnit": "month",
+          "type": "ordinal",
+          "title": "Month",
+          "axis": {
+              "labelAngle": 0,
+          }
+      },
+      "x": {
+          "field": "Date",
+          "timeUnit": "year",
+          "type": "ordinal",
+          "title": "Year"
+      },
+      "color": {
+          "field": "Temp",
+          "aggregate": "max",
+          "type": "quantitative",
+          "scale": {"scheme": "turbo"},
+          "legend": {
+              "title": null
+          }
+      }
+  }
+},
+{"data": {
+      "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/Scotlandtempdata.csv"
+  },
+  "title": "Daily Average Temperatures (C) in North Scotland, UK",
+  "config": {
+      "view": {
+          "strokeWidth": 0,
+          "step": 13
+      },
+      "axis": {
+          "domain": false
+      }
+  },
+  "mark": "rect",
+  "encoding": {
+      "y": {
+          "field": "Date1",
+          "timeUnit": "month",
+          "type": "ordinal",
+          "title": "Month",
+          "axis": {
+              "labelAngle": 0,
+          }
+      },
+      "x": {
+          "field": "Date1",
+          "timeUnit": "year",
+          "type": "ordinal",
+          "title": "Year"
+      },
+      "color": {
+          "field": "Temp1",
+          "aggregate": "max",
+          "type": "quantitative",
+          "scale": {"scheme": "turbo"},
+          "legend": {
+              "title": null
+          }
+      }
+  }
+}]}
