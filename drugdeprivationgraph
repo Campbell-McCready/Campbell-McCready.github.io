@@ -1,10 +1,10 @@
 { "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "Various US measures state by state",
+  "description": "Showing the correlation between income deprivation and deaths from drug poisoning",
 
   "title": {
-    "text": "Gun deaths and income - US states",
-    "subtitle":["Median income (x), and firearm deaths per 100k population (y)",""],
+    "text": "Plotting deaths by drug poisoning against income deprivation",
+    "subtitle":["2023, Data taken from the ONS",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -15,18 +15,12 @@
     "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/drugdeprivationdata.csv",
     "format":{"type":"csv"}},
 
-  "mark": {
-    "type":"circle",
-    "size":150,
-    "color":"rgb(0,67,167)",
-    "opacity":0.6},
   
   "height": 300,
   "width": 600,
 
-
-
-  "encoding": {
+  "layer":[ 
+    {"encoding": {
 
       "tooltip":[
         {"field":"Location", "type": "nominal", "title":"Location"},
@@ -37,13 +31,49 @@
     "x": {
       "field": "Income deprivation", 
       "type": "quantitative",
-      "title":null
+      "title":"Income deprivation",
+      "scale": {"domain": [0.02, 0.26]}
       },
 
     "y": {
       "field": "deaths", 
       "type": "quantitative",
-      "title":null
+      "title":"Deaths from drug poisoning"
       }
-   }
+   },
+    "mark": {
+    "type":"circle",
+    "size":150,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6}
+  },
+  {
+  "mark": {
+      "type": "line",
+      "color": "firebrick"},
+  "transform": [
+        {"regression": "deaths", "on": "Income deprivation"}
+      ],
+      "encoding": {
+        "x": {"field": "Income deprivation", "type": "quantitative"},
+        "y": {"field": "deaths", "type": "quantitative"}
+      }
+    },
+  {
+  "transform":[
+    {"regression": "deaths",
+    "on": "Income deprivation",
+    "params": true},
+    {"calculate": "'R² : '+format(datum.rSquared,'.2f')", "as": "R2"}],
+  "mark": {
+    "type": "text",
+    "color": "firebrick",
+    "x": "width",
+    "align": "right",
+    "y": -5
+  },
+   "encoding": {
+    "text": {"type": "nominal", "field": "R2"}
+    }
+  }]
 }
