@@ -19,17 +19,27 @@
       "title":null},
       "color": {
       "field": "Class",
-      "scale": {"range": ["#0000ff", "#ca8861"]}},
+      "scale": {"range": ["#0000ff", "#3399ff", "#99ccff"]},
+      "sort": "ascending"},
 
     "y": {
      "field": "Value",
      "type": "quantitative",
      "title":null,
-     "stack":true
-     }},
+     "stack":true,
+     "sort": "-y"
+    },
+    "fillOpacity": {
+    "condition": {"param": "highlight", "value": 1},
+    "value": 0.1
+     },
+
+    "tooltip":[      
+      {"field":"Drug", "title":"Drug"},
+      {"field":"Year", "title":"Year"},
+      {"field":"Class"} ]},
 
     "transform":[{"filter": "datum.Year == Year"}],
-
 
   "params": [
     {
@@ -39,9 +49,9 @@
         "input": "range",
         "min": 2010,
         "max": 2021,
-        "step": 1,
-        "name": "Year:"
+        "step": 1
       }
-    }
-  ],
+    },
+   {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
+  ]
 }
