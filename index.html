@@ -1,340 +1,37 @@
-<!-- MY WEBSITE: This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
-<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
-<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
-<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
-
-<!-- Take a look around and make your own copy to adapt for your own use. -->
-
-<!-- This is a comment -->
-<!-- Comments are not displayed in the browser -->
-<!-- They can be used to leave notes in the code -->
-
 <!DOCTYPE html>
-<html> 
-    <!-- HTML is heirarchial: tags like this define elements on the page. 
-    Each tag does something different. For example:
-        - The <html> tag defines the whole document.
-        - The <h1> tag defines a large heading
-        - The <p> tag defines a paragraph
-        - Tags appear as an opening <div> and closing </div> pair
-    -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+      content="width=device-width.
+      initial-scale=1.0" />
+    <title>Cam McCready Data Science </title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
 
-<head>    
-    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
-
-    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
-    <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
-    <title>Campbell McCready's Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
-
-    <!-- This is a link to the vega-lite which we're using to make graphs -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-        
-    </style>
-</head>
-
-<body> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Campbell McCready's Data Science Portfolio
-        
-    </h1>
-
-    <p style="margin-top: 0px; color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Campbell McCready | <a href="https://www.linkedin.com/in/campbell-mccready-809577327/">LinkedIn</a> | <a
-            href="https://www.github.com/Campbell-McCready">GitHub</a>
-    </p>
-
-    <!-- WEEK 1 start -->
-
-    <h2 class="medium"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        Week 1: Hosting someone elses visualisation
-    </h2>
-
-    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
-    <section>
-        <div class="chart-description">
-          <!--  <h2 class="small"> Figure 1: A graph showing how obesity has risen in the UK since 1992 </h2> -->
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We can see below that obesity has risen dramatically, increasing from 15% to 28% in the last two decades. 
-            </p>
-        </div>
-        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
-
-    <script>
-
-
-        let figure_1_spec = "fig1_obesity.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-
-
-        </script>
-
- <section>
-        <div class="chart-description">
-        <!--    <h2 class="small"> Figure 2: A graph showing how obesity is more prevelant in deprived areas.</h2> -->
-            <p> Obesity is also more prevelant in disadvantaged parts of the country, figure 2 shows this, with 1 being the most deprived and 10 being the least:
-            </p>
-        </div>
-        <figure id="Location2"></figure> 
-    </section>
-
-    <script>
-        
-
-        let figure_2_spec = "fig2_deprivation.json"; 
-                                                                                                                  
-        vegaEmbed('#Location2', figure_2_spec)
-
-    </script>
-
-<!-- <section>
-    <div class="chart-description">
-        <h2 class="small"> Figure 3: A graph showing how hospitalisations have increased alongside obesity.</h2>
-        <p> Figure 3 visualises the stress that obesity is putting on the NHS, the number of hospital episodes related to obesity has more than tripled since 2011.
-        </p>
+  <body>
+    nav.navbar class="navbar"></nav>  
+    <div> class=navbar__container">
+      <a href="/" id="#navbar__logo">Cam</a>
+      <div> class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>  
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links"> Home </a>
+        </li>    
+                <li class="navbar__item">
+          <a href="index.html" class="navbar__links"> Portfolio </a>
+        </li>
+                        <li class="navbar__item">
+          <a href="index.html" class="navbar__links"> Hello </a>
+        </li> 
+                                <li class="navbar__btn">
+          <a href="index.html" class="button"> Sign up </a>
+        </li> 
+      </ul> 
     </div>
-    <figure id="Location3"></figure> 
-</section>
-
-<script>
-        
-
-    let figure_3_spec = "fig4_hospitalisation.json"; 
-                                                                                                              
-    vegaEmbed('#Location3', figure_3_spec)
-
-</script>
-
-<section>  
--->
-
- <p> Data taken from the Economics Observatory study: 
-        </p>
-
-<a href="https://www.economicsobservatory.com/why-should-we-care-about-obesity">Why should we care about obesity?</a>
-    
-</section>
-
-      <!-- WEEK 1 end -->
-
-  <!-- WEEK 2 start -->
-
-<section>
-
-  <h2 class="medium"> 
-        Week 2: Building your own visualisation
-    </h2>
-
-<p> I used data I gathered in my data science module last year covering the UK's life expectancy and GDP per capita. Using vega lite I created two diagrams: 
-    </p>
-
-    <figure id="Location4"></figure> 
-
-    </section>
-
- <script>
-        
-
- let figure_4_spec = "GDPPC graph test"; 
-                                                                                                                  
-    vegaEmbed('#Location4', figure_4_spec)
-    
- </script>
-
-<p> Because my data for life expectancy was only between 65 and 85 I had to use domains to prevent a large unnecessary gap on my graph:
-    </p>
-
-    <figure id="Location5"></figure> 
-
-    </section>
-
- <script>
-        
-
- let figure_5_spec = "Life exp test"; 
-                                                                                                                  
-    vegaEmbed('#Location5', figure_5_spec)
-    
- </script>
-
-  <!-- WEEK 3 start -->
-
-  <h2 class="medium"> 
-        Week 3: Using a visualisation in economic commentary
-    </h2>
-<p> I considered an argument made at the Festival of Economics stating that Britain's export market should be improved to boost economic growth. To form my opinion on this statement I had to look at the UK's imports and exports. </p>
-
-    <figure id="Location6"></figure>
-
- <script>
-        
- let figure_6_spec = "XMgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location6', figure_6_spec)
-    
- </script>
-
-<p> We can see from the diagram above the orange import line is consistently above the blue export line, meaning the UK regularly runs a trade deficit. This is shown more clearly by looking at the net trade, the difference between imports and exports, shown below: </p>
-
-    <figure id="Location7"></figure>
-    
-<script>
-
- let figure_7_spec = "NetTradegraph"; 
-                                                                                                                  
-    vegaEmbed('#Location7', figure_7_spec)
-    
- </script>
-
-<p> As we can see the green trade balance line is consistently negative, only spiking into positives in 2020 and 2021. Therefore, it can be argued that there is a strong case to boost UK exports, creating economic growth. </p>
-
-      <!-- WEEK 4 start -->
-
-<h2 class="medium"> 
-        Week 4: Recreating and improving someone elses chart
-    </h2>
-
-<p> I found a chart online showing the population of every country: </p>
-
-<img src="bad data example.png" >
-
-<p> This is my recreation of the chart: </p>  
-
-        <figure id="Location9"></figure>
-    
-<script>
-
- let figure_9_spec = "countrypoprecreation"; 
-                                                                                                                  
-    vegaEmbed('#Location9', figure_9_spec)
-    
- </script>
-
-<p> This chart is messy, it shows population data for all 217 countries. By the time you're past the 10th largest country it's difficult to distinguish the difference between them. So, to tidy the chart up, I chose to display only the top 10 largest countries by population. I also added a title and a tooltip that shows the name of the country and the population when hovered over. This is my improved chart: </p>
-
-        <figure id="Location10"></figure>
-    
-<script>
-
- let figure_10_spec = "improvedcountrypopgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location10', figure_10_spec)
-    
- </script>
-    
-    
-  <!-- WEEK 5 start -->
-
-<h2 class="medium"> 
-        Week 5: Implementing a scraper
-    </h2>
-<p> I chose to scrape a website I found showing the number of pubs in each county of England, there was no clear way to download this data, so I thought a scraper would be an ideal tool to extract the data from this website.</p>
-
-<p> <a href="https://colab.research.google.com/drive/1k90abY4O5rDTPDt4EJFbxMt-inryFx-O?usp=sharing">Click here to view the scraper project</a></p>
-
-<p> <a href="https://www.pubsgalore.co.uk/stats/photos-counties.php">Click here to view the website I scraped</a> </p>
-
-<p> I chose to display this data on a choropleth map, in order to practice creating maps for the Week 7 task. I tidied the data into regions and used a base map of the UK: </p>
-
-    <figure id="Location8"></figure>
-    
-<script>
-
- let figure_8_spec = "UKpubsgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location8', figure_8_spec)
-    
- </script>
-
-      <!-- WEEK 6 start -->
-
-<h2 class="medium"> 
-        Week 6: Loops, building a dashboard
-    </h2>
-
-  <!-- WEEK 7 start -->
-
-    <h2 class="medium"> 
-        Week 7: Base maps and choropleths
-    </h2>
-
-    <p> For my choropleth map I used this base map of Germany I found on Github: </p>
-
-    <figure id="Location11"></figure>
-    
-<script>
-
- let figure_11_spec = "germanybasemap"; 
-                                                                                                                  
-    vegaEmbed('#Location11', figure_11_spec)
-
- </script>
-
-<p> Base map taken from: <a href="https://github.com/AliceWi">github.com/AliceWi</a> </p>
-
-
-<p> I used this base map to make a choropleth of the population of each German state: </p>
-
-        <figure id="Location12"></figure>
-
-<p> This chart shows that Nordhein-Westalfen has the largest population, but it is also much larger than somehwere with a smaller population, for example Bremen. Next time I make a graph like this I will divide the population by the square area of the region, giving me the population density rather than the population </p>
-    
-<script>
-
- let figure_12_spec = "germanypopgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location12', figure_12_spec)
-
- </script>
-
-<!-- WEEK 8 start -->
-
-<h2 class="medium"> 
-        Week 8: Advanced analytics charts
-    </h2>
-<p> For my first chart I plotted deaths by drug poisoning against the income deprivation in each local authority of England to see if there was any correlation. I learned how to construct scatter graphs and perform an OLS regression to find the R²: </p>
-
-        <figure id="Location13"></figure>
-    
-<script>
-
- let figure_13_spec = "drugdeprivationgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location13', figure_13_spec)
-
- </script>
-
-    <p> For my second chart I plotted two heatmaps of the average monthly temperature in two locations of the UK, the South West and North Scotland, over the past 30 years. I learned how to construct heat map graphs and also use verticle concatenations to display the two graphs above and below each other. </p>
-
-        <figure id="Location14"></figure>
-    
-<script>
-
- let figure_14_spec = "SWScotlanttempgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location14', figure_14_spec)
-
- </script>
-
-
-
-
-
-
-                                                                                                           
-</body>
-    
+  </body> 
 </html>
