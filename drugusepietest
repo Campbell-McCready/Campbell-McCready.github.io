@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple pie chart with embedded data.",
+  "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/seconddrugusedata.csv"
+  },
+  "title": "The 10 countries with the largest populations",
+  "mark": {"type": "arc", "innerRadius": 50},
+  "encoding": {
+    "order": {"field": "Value", "type": "quantitative", "sort": "descending"},
+    "theta": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Drug", "type": "nominal"},
+    "tooltip": [ 
+      {"field": "Drug",
+      "title": "Drug"},
+      {"field": "Value",
+      "title": "Drug use"}]
+  },
+  "transform":[{"filter": "datum.Year == Year"}],
+
+  "params": [
+    {
+      "name": "Year",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2021,
+        "step": 1
+      }
+    }
+  ]
+}
