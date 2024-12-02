@@ -63,7 +63,7 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: ##ffffff;
+  color: ##ffffff; 
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #800000;
+    background-color: #800000;               /* nav bar colour */
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-bottom: 0;
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-links li:hover {
-    background-color: #ff9966;
+    background-color: #ff9966; /* link hover colour */
 }
 
 .toggle-button {
@@ -197,7 +197,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 20px;
-  background-color: #666666;
+  background-color: ##F0F0F0; /* Square oustide the graphs colour */
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2.5em;
