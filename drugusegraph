@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Illegal drug use, per year (exclusing cannabis)",
+    "anchor": "middle",
+    "subtitleFontWeight": "lighter"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/seconddrugusedata.csv"
+  },
+
+  "mark":{"type": "bar"},
+
+  "encoding":{
+    
+      "x": {
+      "field": "Drug", 
+      "type": "ordinal", 
+      "title":null},
+      "color": {
+      "field": "Class",
+      "scale": {"range": ["#0000ff", "#ca8861"]}},
+
+    "y": {
+     "field": "Value",
+     "type": "quantitative",
+     "title":null,
+     "stack":true
+     }},
+
+    "transform":[{"filter": "datum.Year == Year"}],
+
+
+  "params": [
+    {
+      "name": "Year",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+}
