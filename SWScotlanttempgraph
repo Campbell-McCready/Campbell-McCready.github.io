@@ -5,7 +5,7 @@
   {"data": {
       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/SWtempcleaneddata.csv"
   },
-  "title": "Daily Average Temperatures (C) in the South West, UK",
+  "title": "Monthly Average Temperatures (C) in the South West, UK",
   "mark": "rect",
   "encoding": {
       "y": {
@@ -37,7 +37,7 @@
 {"data": {
       "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/Scotlandtempdata.csv"
   },
-  "title": "Daily Average Temperatures (C) in North Scotland, UK",
+  "title": "Monthly Average Temperatures (C) in North Scotland, UK",
   "mark": "rect",
   "encoding": {
       "y": {
