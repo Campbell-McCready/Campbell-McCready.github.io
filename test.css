@@ -19,7 +19,7 @@ body {
 /* Hero Section*/
 .hero {
   text-align: center;
-  padding: 210px 20px;
+  padding: 210px 10px;
   background: linear-gradient(120deg, #000000, #000000);
   color: white;
   margin-bottom: 0;
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #4a005a;
+    background-color: #800000;
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-bottom: 0;
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-links li:hover {
-    background-color: #da84b1;
+    background-color: #ff9966;
 }
 
 .toggle-button {
