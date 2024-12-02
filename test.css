@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #800000;               /* nav bar colour */
+    background-color: black;               /* nav bar colour */
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-bottom: 0;
