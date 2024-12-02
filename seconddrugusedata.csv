@@ -1,0 +1,205 @@
+Year,Drug,Class,Value
+2010,Any cocaine,A,801
+2010,Powder cocaine,A,781
+2010,Crack cocaine,A,64
+2010,Ecstasy,A,500
+2010,Hallucinogens,A,159
+2010,LSD,A,58
+2010,Magic mushrooms,A,131
+2010,Opiates,A,50
+2010,Heroin,A,34
+2010,Methadone,A,33
+2010,Amphetamines,B,300
+2010,Methamphetamine,A,17
+2010,Cannabis,B,"2,131"
+2010,Ketamine,B,156
+2010,Mephedrone ,B,432
+2010,Tranquillisers,B,146
+2010,Anabolic steroids,C,49
+2011,Any cocaine,A,682
+2011,Powder cocaine,A,670
+2011,Crack cocaine,A,51
+2011,Ecstasy,A,434
+2011,Hallucinogens,A,174
+2011,LSD,A,68
+2011,Magic mushrooms,A,140
+2011,Opiates,A,75
+2011,Heroin,A,34
+2011,Methadone,A,58
+2011,Amphetamines,B,323
+2011,Methamphetamine,A,21
+2011,Cannabis,B,"2,147"
+2011,Ketamine,B,197
+2011,Mephedrone ,B,430
+2011,Tranquillisers,B,139
+2011,Anabolic steroids,C,50
+2012,Any cocaine,A,697
+2012,Powder cocaine,A,685
+2012,Crack cocaine,A,44
+2012,Ecstasy,A,447
+2012,Hallucinogens,A,169
+2012,LSD,A,62
+2012,Magic mushrooms,A,145
+2012,Opiates,A,92
+2012,Heroin,A,43
+2012,Methadone,A,67
+2012,Amphetamines,B,251
+2012,Methamphetamine,A,19
+2012,Cannabis,B,"2,207"
+2012,Ketamine,B,183
+2012,Mephedrone ,B,336
+2012,Tranquillisers,B,163
+2012,Anabolic steroids,C,69
+2013,Any cocaine,A,630
+2013,Powder cocaine,A,615
+2013,Crack cocaine,A,46
+2013,Ecstasy,A,401
+2013,Hallucinogens,A,117
+2013,LSD,A,52
+2013,Magic mushrooms,A,96
+2013,Opiates,A,38
+2013,Heroin,A,27
+2013,Methadone,A,29
+2013,Amphetamines,B,206
+2013,Methamphetamine,A,17
+2013,Cannabis,B,"2,032"
+2013,Ketamine,B,117
+2013,Mephedrone ,B,168
+2013,Tranquillisers,B,142
+2013,Anabolic steroids,C,57
+2014,Any cocaine,A,777
+2014,Powder cocaine,A,768
+2014,Crack cocaine,A,48
+2014,Ecstasy,A,516
+2014,Hallucinogens,A,182
+2014,LSD,A,102
+2014,Magic mushrooms,A,119
+2014,Opiates,A,64
+2014,Heroin,A,34
+2014,Methadone,A,50
+2014,Amphetamines,B,246
+2014,Methamphetamine,A,26
+2014,Cannabis,B,"2,144"
+2014,Ketamine,B,195
+2014,Mephedrone ,B,211
+2014,Tranquillisers,B,162
+2014,Anabolic steroids,C,67
+2015,Any cocaine,A,756
+2015,Powder cocaine,A,743
+2015,Crack cocaine,A,47
+2015,Ecstasy,A,545
+2015,Hallucinogens,A,218
+2015,LSD,A,115
+2015,Magic mushrooms,A,173
+2015,Opiates,A,40
+2015,Heroin,A,21
+2015,Methadone,A,27
+2015,Amphetamines,B,193
+2015,Methamphetamine,A,24
+2015,Cannabis,B,"2,174"
+2015,Ketamine,B,159
+2015,Mephedrone ,B,162
+2015,Tranquillisers,B,173
+2015,Anabolic steroids,C,72
+2016,Any cocaine,A,738
+2016,Powder cocaine,A,725
+2016,Crack cocaine,A,31
+2016,Ecstasy,A,492
+2016,Hallucinogens,A,163
+2016,LSD,A,57
+2016,Magic mushrooms,A,129
+2016,Opiates,A,42
+2016,Heroin,A,27
+2016,Methadone,A,25
+2016,Amphetamines,B,198
+2016,Methamphetamine,A,15
+2016,Cannabis,B,"2,121"
+2016,Ketamine,B,94
+2016,Mephedrone ,B,89
+2016,Tranquillisers,B,126
+2016,Anabolic steroids,C,54
+2017,Any cocaine,A,764
+2017,Powder cocaine,A,760
+2017,Crack cocaine,A,19
+2017,Ecstasy,A,439
+2017,Hallucinogens,A,144
+2017,LSD,A,84
+2017,Magic mushrooms,A,84
+2017,Opiates,A,24
+2017,Heroin,A,15
+2017,Methadone,A,13
+2017,Amphetamines,B,145
+2017,Methamphetamine,A,16
+2017,Cannabis,B,"2,177"
+2017,Ketamine,B,116
+2017,Mephedrone ,B,48
+2017,Tranquillisers,B,136
+2017,Anabolic steroids,C,61
+2018,Any cocaine,A,903
+2018,Powder cocaine,A,895
+2018,Crack cocaine,A,23
+2018,Ecstasy,A,559
+2018,Hallucinogens,A,223
+2018,LSD,A,134
+2018,Magic mushrooms,A,142
+2018,Opiates,A,32
+2018,Heroin,A,23
+2018,Methadone,A,19
+2018,Amphetamines,B,173
+2018,Methamphetamine,A,16
+2018,Cannabis,B,"2,420"
+2018,Ketamine,B,266
+2018,Mephedrone ,B,30
+2018,Tranquillisers,B,205
+2018,Anabolic steroids,C,62
+2019,Any cocaine,A,987
+2019,Powder cocaine,A,976
+2019,Crack cocaine,A,27
+2019,Ecstasy,A,524
+2019,Hallucinogens,A,240
+2019,LSD,A,119
+2019,Magic mushrooms,A,170
+2019,Opiates,A,32
+2019,Heroin,A,22
+2019,Methadone,A,19
+2019,Amphetamines,B,188
+2019,Methamphetamine,A,11
+2019,Cannabis,B,"2,572"
+2019,Ketamine,B,261
+2019,Mephedrone ,B,8
+2019,Tranquillisers,B,135
+2019,Anabolic steroids,C,62
+2020,Any cocaine,A,871
+2020,Powder cocaine,A,857
+2020,Crack cocaine,A,22
+2020,Ecstasy,A,463
+2020,Hallucinogens,A,225
+2020,LSD,A,93
+2020,Magic mushrooms,A,166
+2020,Opiates,A,22
+2020,Heroin,A,11
+2020,Methadone,A,16
+2020,Amphetamines,B,107
+2020,Methamphetamine,A,10
+2020,Cannabis,B,"2,570"
+2020,Ketamine,B,277
+2020,Mephedrone ,B,11
+2020,Tranquillisers,B,164
+2020,Anabolic steroids,C,31
+2021,Any cocaine,A,815
+2021,Powder cocaine,A,810
+2021,Crack cocaine,A,33
+2021,Ecstasy,A,366
+2021,Hallucinogens,A,341
+2021,LSD,A,129
+2021,Magic mushrooms,A,279
+2021,Opiates,A,30
+2021,Heroin,A,13
+2021,Methadone,A,21
+2021,Amphetamines,B,105
+2021,Methamphetamine,A,17
+2021,Cannabis,B,"2,515"
+2021,Ketamine,B,299
+2021,Mephedrone ,B,8
+2021,Tranquillisers,B,151
+2021,Anabolic steroids,C,34
