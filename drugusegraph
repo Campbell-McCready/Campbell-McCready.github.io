@@ -36,6 +36,7 @@
 
     "tooltip":[      
       {"field":"Drug", "title":"Drug"},
+      {"field:"Value", "title":"No. users"},
       {"field":"Year", "title":"Year"},
       {"field":"Class"} ]},
 
