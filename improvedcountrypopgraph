@@ -4,10 +4,16 @@
   "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/improvedcountrypop.csv"
   },
   "title": "The 10 countries with the largest populations",
+  "transform": [
+    {
+      "calculate": "toNumber(datum.Value)",
+      "as": "Value"
+    }
+  ],
   "mark": "arc",
   "encoding": {
-    "theta": {"field": "Value", "type": "quantitative"},
-    "color": {"field": "Country", "type": "nominal"},
+    "theta": {"field": "Value", "type": "quantitative","stack": true},
+    "color": {"field": "Country", "type": "nominal", "sort":["China","India","United States","Indonesia","Pakistan","Brazil","Nigeria","Bangladesh","Russian Federation","Japan"]},
     "order": {"field": "Value", "type": "quantitative", "sort": "descending"},
     "tooltip": [ 
       {"field": "Country",
