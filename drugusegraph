@@ -9,7 +9,7 @@
     "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/seconddrugusedata.csv"
   },
 
-  "mark":{"type": "bar"},
+  "mark":{"type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
 
   "encoding":{
     
@@ -36,7 +36,7 @@
 
     "tooltip":[      
       {"field":"Drug", "title":"Drug"},
-      {"field:"Value", "title":"No. users"},
+      {"field":"Value", "title":"No. Users"},
       {"field":"Year", "title":"Year"},
       {"field":"Class"} ]},
 
