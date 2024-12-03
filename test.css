@@ -51,8 +51,6 @@ img {
 .text {
   font-size: 10px;
   align-text: left;
-  display: inline-block;
-  width: 100%;
 }
 .hero h1 {
   font-size: 3rem;
