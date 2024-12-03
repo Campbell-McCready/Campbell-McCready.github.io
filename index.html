@@ -37,115 +37,48 @@
         </ul>
       </div>
     </nav>
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
+    <h1 class="big" style="margin-bottom: 0px;">
+        
         Welcome to my Data Science website.
         
     </h1>
 
     <p style="margin-top: 0px; color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
     </p>
 
     <!-- WEEK 1 start -->
-    <script>
-        let figure_1_spec = "fig1_obesity.json"; // We're storing the URL of the graph we want to display in a variable                                            
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        </script>
-
-    <script>
-        let figure_2_spec = "fig2_deprivation.json";                                                                                                           
-        vegaEmbed('#Location2', figure_2_spec)
-    </script>
-
-
+    
     <section class="chart-section">
         <h2>Task 1: Hosting - Display Charts in Your Own Site</h2>
         <div class="card">
             <figure id="Location1"></figure>
             <p>
-                We can see below that obesity has risen dramatically, increasing from 15% to 28% in the last two decades.
+                We can see above that obesity has risen dramatically, increasing from 15% to 28% in the last two decades.
             </p>
         </div>
         <div class="card">
           <figure id="Location2"></figure>
             <p>
-             Obesity is also more prevelant in disadvantaged parts of the country, figure 2 shows this, with 1 being the most deprived and 10 being the least:
+             Obesity is also more prevelant in disadvantaged parts of the country, figure 2 shows this, with 1 being the most deprived and 10 being the least. Data taken from the Economics Observatory study:<a href="https://www.economicsobservatory.com/why-should-we-care-about-obesity">Why should we care about obesity?</a> 
             </p>
         </div>
   </section>
 
-<!-- <section>
-    <div class="chart-description">
-        <h2 class="small"> Figure 3: A graph showing how hospitalisations have increased alongside obesity.</h2>
-        <p> Figure 3 visualises the stress that obesity is putting on the NHS, the number of hospital episodes related to obesity has more than tripled since 2011.
-        </p>
-    </div>
-    <figure id="Location3"></figure> 
-</section>
-
-<script>
-        
-
-    let figure_3_spec = "fig4_hospitalisation.json"; 
-                                                                                                              
-    vegaEmbed('#Location3', figure_3_spec)
-
-</script>
-
-<section>  
--->
-
- <p> Data taken from the Economics Observatory study: 
-        </p>
-
-<a href="https://www.economicsobservatory.com/why-should-we-care-about-obesity">Why should we care about obesity?</a>
+<!-- WEEK 2 START -->
     
-</section>
-
-      <!-- WEEK 1 end -->
-
-  <!-- WEEK 2 start -->
-
-<section>
-
-  <h2 class="medium"> 
-        Week 2: Building your own visualisation
-    </h2>
-
-<p> I used data I gathered in my data science module last year covering the UK's life expectancy and GDP per capita. Using vega lite I created two diagrams: 
-    </p>
-
-    <figure id="Location4"></figure> 
-
+    <section class="chart-section">
+        <h2> Week 2: Building your own visualisation </h2>
+        <div class="card">
+            <figure id="Location4"></figure>
+            <p> I used data I gathered in my data science module last year covering the UK's life expectancy and GDP per capita. Using vega lite I created two diagrams. </p>
+        </div>
+         <div class="card">
+            <figure id="Location5"></figure>
+             <p> Because my data for life expectancy was only between 65 and 85 I had to use domains to prevent a large unnecessary gap on my graph.</p>
+         </div>   
     </section>
 
- <script>
-        
-
- let figure_4_spec = "GDPPC graph test"; 
-                                                                                                                  
-    vegaEmbed('#Location4', figure_4_spec)
-    
- </script>
-
-<p> Because my data for life expectancy was only between 65 and 85 I had to use domains to prevent a large unnecessary gap on my graph:
-    </p>
-
-    <figure id="Location5"></figure> 
-
-    </section>
-
- <script>
-        
-
- let figure_5_spec = "Life exp test"; 
-                                                                                                                  
-    vegaEmbed('#Location5', figure_5_spec)
-    
- </script>
-
-  <!-- WEEK 3 start -->
+ <!-- WEEK 3 start -->
 
   <h2 class="medium"> 
         Week 3: Using a visualisation in economic commentary
@@ -154,25 +87,11 @@
 
     <figure id="Location6"></figure>
 
- <script>
-        
- let figure_6_spec = "XMgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location6', figure_6_spec)
-    
- </script>
-
 <p> We can see from the diagram above the orange import line is consistently above the blue export line, meaning the UK regularly runs a trade deficit. This is shown more clearly by looking at the net trade, the difference between imports and exports, shown below: </p>
 
     <figure id="Location7"></figure>
     
-<script>
 
- let figure_7_spec = "NetTradegraph"; 
-                                                                                                                  
-    vegaEmbed('#Location7', figure_7_spec)
-    
- </script>
 
 <p> As we can see the green trade balance line is consistently negative, only spiking into positives in 2020 and 2021. Therefore, it can be argued that there is a strong case to boost UK exports, creating economic growth. </p>
 
@@ -189,27 +108,11 @@
 <p> This is my recreation of the chart: </p>  
 
         <figure id="Location9"></figure>
-    
-<script>
 
- let figure_9_spec = "countrypoprecreation"; 
-                                                                                                                  
-    vegaEmbed('#Location9', figure_9_spec)
-    
- </script>
 
 <p> This chart is messy, it shows population data for all 217 countries. By the time you're past the 10th largest country it's difficult to distinguish the difference between them. So, to tidy the chart up, I chose to display only the top 10 largest countries by population. I also added a title and a tooltip that shows the name of the country and the population when hovered over. This is my improved chart: </p>
 
         <figure id="Location10"></figure>
-    
-<script>
-
- let figure_10_spec = "improvedcountrypopgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location10', figure_10_spec)
-    
- </script>
-    
     
   <!-- WEEK 5 start -->
 
@@ -225,14 +128,6 @@
 <p> I chose to display this data on a choropleth map, in order to practice creating maps for the Week 7 task. I tidied the data into regions and used a base map of the UK: </p>
 
     <figure id="Location8"></figure>
-    
-<script>
-
- let figure_8_spec = "UKpubsgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location8', figure_8_spec)
-    
- </script>
 
       <!-- WEEK 6 start -->
 
@@ -250,13 +145,7 @@
 
     <figure id="Location11"></figure>
     
-<script>
 
- let figure_11_spec = "germanybasemap"; 
-                                                                                                                  
-    vegaEmbed('#Location11', figure_11_spec)
-
- </script>
 
 <p> Base map taken from: <a href="https://github.com/AliceWi">github.com/AliceWi</a> </p>
 
@@ -266,14 +155,6 @@
         <figure id="Location12"></figure>
 
 <p> This chart shows that Nordhein-Westalfen has the largest population, but it is also much larger than somehwere with a smaller population, for example Bremen. Next time I make a graph like this I will divide the population by the square area of the region, giving me the population density rather than the population </p>
-    
-<script>
-
- let figure_12_spec = "germanypopgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location12', figure_12_spec)
-
- </script>
 
 <!-- WEEK 8 start -->
 
@@ -283,27 +164,41 @@
 <p> For my first chart I plotted deaths by drug poisoning against the income deprivation in each local authority of England to see if there was any correlation. I learned how to construct scatter graphs and perform an OLS regression to find the R²: </p>
 
         <figure id="Location13"></figure>
-    
-<script>
-
- let figure_13_spec = "drugdeprivationgraph"; 
-                                                                                                                  
-    vegaEmbed('#Location13', figure_13_spec)
-
- </script>
 
     <p> For my second chart I plotted two heatmaps of the average monthly temperature in two locations of the UK, the South West and North Scotland, over the past 30 years. I learned how to construct heat map graphs and also use verticle concatenations to display the two graphs above and below each other. </p>
 
         <figure id="Location14"></figure>
-    
-<script>
 
- let figure_14_spec = "SWScotlanttempgraph"; 
-                                                                                                                  
+    <script>
+        let figure_1_spec = "fig1_obesity.json";                                            
+        vegaEmbed('#Location1', figure_1_spec) 
+        let figure_2_spec = "fig2_deprivation.json";                                                                                                           
+        vegaEmbed('#Location2', figure_2_spec)
+        let figure_4_spec = "GDPPC graph test";                                                                                                           
+        vegaEmbed('#Location4', figure_4_spec)
+         let figure_5_spec = "Life exp test";                                                                                         
+        vegaEmbed('#Location5', figure_5_spec)
+         let figure_6_spec = "XMgraph";                                                                                                    
+    vegaEmbed('#Location6', figure_6_spec)
+     let figure_7_spec = "NetTradegraph";                                                                                        
+    vegaEmbed('#Location7', figure_7_spec)
+ let figure_9_spec = "countrypoprecreation";                                                                                         
+    vegaEmbed('#Location9', figure_9_spec)
+     let figure_10_spec = "improvedcountrypopgraph";                                                                              
+    vegaEmbed('#Location10', figure_10_spec)
+     let figure_8_spec = "UKpubsgraph";                                                                                 
+    vegaEmbed('#Location8', figure_8_spec)
+ let figure_11_spec = "germanybasemap";                                                                                     
+    vegaEmbed('#Location11', figure_11_spec)
+ let figure_12_spec = "germanypopgraph";                                                                                
+    vegaEmbed('#Location12', figure_12_spec)
+         let figure_13_spec = "drugdeprivationgraph";                                                                        
+    vegaEmbed('#Location13', figure_13_spec)
+     let figure_14_spec = "SWScotlanttempgraph";                                                                 
     vegaEmbed('#Location14', figure_14_spec)
 
- </script>
-
+        </script>
+        
 
 
 
