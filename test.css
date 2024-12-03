@@ -39,7 +39,8 @@ img {
 }
 
 .text {
-  font-size: 70px;
+  font-size: 10px;
+  align-text: left;
 }
 .hero h1 {
   font-size: 3rem;
