@@ -16,6 +16,16 @@ body {
   padding-top: 0px;
 }
 
+d {
+  margin-bottom: 1em;
+  font-weight: 300;
+  width: 100%;
+  text-align: left;
+  color: black;
+  font: Arial;
+  font-size: 1em;
+}
+
 /* Hero Section*/
 .hero {
   text-align: center;
