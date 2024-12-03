@@ -24,6 +24,8 @@ d {
   color: black;
   font: Arial;
   font-size: 1em;
+  display: flex;
+
 }
 
 /* Hero Section*/
