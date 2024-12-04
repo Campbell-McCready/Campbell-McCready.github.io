@@ -1,0 +1,78 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Showing the correlation between income deprivation and NHS admissions from drug poisoning",
+
+  "title": {
+    "text": "Plotting the amount of NHS admissions by drug poisoning against income deprivation",
+    "subtitle":["2020, Data taken from the ONS",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/NEWdrugdeprivationdata.csv",
+    "format":{"type":"csv"}},
+
+  
+  "height": 300,
+  "width": 600,
+
+  "layer":[ 
+    {"encoding": {
+
+      "tooltip":[
+        {"field":"location", "type": "nominal", "title":"Location"},
+        {"field":"admissions", "type": "quantitative", "title":"Number of drug poisoning admissions"},
+        {"field":"IMD", "type": "quantitative", "title":"Income deprivation score"}
+      ],
+
+    "x": {
+      "field": "IMD", 
+      "type": "quantitative",
+      "title":"Income deprivation score"
+      },
+
+    "y": {
+      "field": "admissions", 
+      "type": "quantitative",
+      "title":"NHS admissions due to drug poisoning"
+      }
+   },
+    "mark": {
+    "type":"circle",
+    "size":150,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6}
+  },
+  {
+  "mark": {
+      "type": "line",
+      "color": "firebrick"},
+  "transform": [
+        {"regression": "admissions", "on": "IMD"}
+      ],
+      "encoding": {
+        "x": {"field": "IMD", "type": "quantitative"},
+        "y": {"field": "admissions", "type": "quantitative"}
+      }
+    },
+  {
+  "transform":[
+    {"regression": "admissions",
+    "on": "IMD",
+    "params": true},
+    {"calculate": "'R² : '+format(datum.rSquared,'.2f')", "as": "R2"}],
+  "mark": {
+    "type": "text",
+    "color": "firebrick",
+    "x": "width",
+    "align": "right",
+    "y": -5
+  },
+   "encoding": {
+    "text": {"type": "nominal", "field": "R2"}
+    }
+  }]
+}
