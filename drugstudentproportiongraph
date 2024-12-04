@@ -1,0 +1,78 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Showing the correlation between a cities proportional student population and deaths from drug poisoning",
+
+  "title": {
+    "text": "Plotting UK cities deaths by drug poisoning against it's proportional student population ",
+    "subtitle":["2023, Data taken from the ONS",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/studentpropdata.csv",
+    "format":{"type":"csv"}},
+
+  
+  "height": 300,
+  "width": 600,
+
+  "layer":[ 
+    {"encoding": {
+
+      "tooltip":[
+        {"field":"City", "type": "nominal", "title":"City"},
+        {"field":"deaths", "type": "quantitative", "title":"Number of drug poisoning deaths"},
+        {"field":"Studentprop", "type": "quantitative", "title":"Proportional student population"}
+      ],
+
+    "x": {
+      "field": "Studentprop", 
+      "type": "quantitative",
+      "title":"Studentprop"
+      },
+
+    "y": {
+      "field": "deaths", 
+      "type": "quantitative",
+      "title":"Deaths from drug poisoning"
+      }
+   },
+    "mark": {
+    "type":"circle",
+    "size":150,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6}
+  },
+  {
+  "mark": {
+      "type": "line",
+      "color": "firebrick"},
+  "transform": [
+        {"regression": "deaths", "on": "Studentprop"}
+      ],
+      "encoding": {
+        "x": {"field": "Studentprop", "type": "quantitative"},
+        "y": {"field": "deaths", "type": "quantitative"}
+      }
+    },
+  {
+  "transform":[
+    {"regression": "deaths",
+    "on": "Studentprop",
+    "params": true},
+    {"calculate": "'R² : '+format(datum.rSquared,'.2f')", "as": "R2"}],
+  "mark": {
+    "type": "text",
+    "color": "firebrick",
+    "x": "width",
+    "align": "right",
+    "y": -5
+  },
+   "encoding": {
+    "text": {"type": "nominal", "field": "R2"}
+    }
+  }]
+}
