@@ -1,1 +1,79 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
+  "description": "Showing the correlation between income deprivation and deaths from drug poisoning",
+
+  "title": {
+    "text": "Plotting deaths by drug poisoning against income deprivation",
+    "subtitle":["2023, Data taken from the ONS",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/drugdeprivationdata.csv",
+    "format":{"type":"csv"}},
+
+  
+  "height": 300,
+  "width": 600,
+
+  "layer":[ 
+    {"encoding": {
+
+      "tooltip":[
+        {"field":"Location", "type": "nominal", "title":"Location"},
+        {"field":"deaths", "type": "quantitative", "title":"Number of drug poisoning deaths"},
+        {"field":"Income deprivation", "type": "quantitative", "title":"Income Deprivation"}
+      ],
+
+    "x": {
+      "field": "Income deprivation", 
+      "type": "quantitative",
+      "title":"Income deprivation",
+      "scale": {"domain": [0.02, 0.26]}
+      },
+
+    "y": {
+      "field": "deaths", 
+      "type": "quantitative",
+      "title":"Deaths from drug poisoning"
+      }
+   },
+    "mark": {
+    "type":"circle",
+    "size":150,
+    "color":"rgb(0,67,167)",
+    "opacity":0.6}
+  },
+  {
+  "mark": {
+      "type": "line",
+      "color": "firebrick"},
+  "transform": [
+        {"regression": "deaths", "on": "Income deprivation"}
+      ],
+      "encoding": {
+        "x": {"field": "Income deprivation", "type": "quantitative"},
+        "y": {"field": "deaths", "type": "quantitative"}
+      }
+    },
+  {
+  "transform":[
+    {"regression": "deaths",
+    "on": "Income deprivation",
+    "params": true},
+    {"calculate": "'R² : '+format(datum.rSquared,'.2f')", "as": "R2"}],
+  "mark": {
+    "type": "text",
+    "color": "firebrick",
+    "x": "width",
+    "align": "right",
+    "y": -5
+  },
+   "encoding": {
+    "text": {"type": "nominal", "field": "R2"}
+    }
+  }]
+}
