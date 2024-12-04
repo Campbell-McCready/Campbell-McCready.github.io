@@ -1,10 +1,10 @@
 { "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "Showing the correlation between income deprivation and deaths from drug poisoning",
+  "description": "Showing the correlation between income deprivation and drug related deaths",
 
   "title": {
-    "text": "Plotting deaths by drug poisoning against income deprivation",
-    "subtitle":["2023, Data taken from the ONS",""],
+    "text": "Plotting drug-related deaths against income deprivation",
+    "subtitle":["2019, Data taken from the ONS and GOV.UK",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
