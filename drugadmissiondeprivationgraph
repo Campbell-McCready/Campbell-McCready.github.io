@@ -19,6 +19,12 @@
   "height": 300,
   "width": 600,
 
+  "transform":[
+    {"calculate": "toNumber(datum.admissions)",
+    "as": "admissions"},
+    {"calculate": "toNumber(datum.IMD)",
+    "as": "IMD"}
+  ],
   "layer":[ 
     {"encoding": {
 
@@ -63,7 +69,7 @@
     {"regression": "admissions",
     "on": "IMD",
     "params": true},
-    {"calculate": "'R² : '+format(datum.rSquared,'.2f')", "as": "R2"}],
+    {"calculate": "'R² : '+format(datum.rSquared,'.4f')", "as": "R2"}],
   "mark": {
     "type": "text",
     "color": "firebrick",
