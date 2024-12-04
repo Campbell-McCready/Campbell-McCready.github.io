@@ -1,0 +1,157 @@
+location,admissions,IMD
+Barking and Dagenham,20 ,32.768
+Barnet,45 ,16.148
+Barnsley,125 ,29.933
+Bath and North East Somerset,70 ,11.745
+Bedford,40 ,18.932
+Bexley,25 ,16.273
+Birmingham,365 ,38.067
+Blackburn with Darwen,90 ,36.013
+Blackpool,90 ,45.039
+Bolton,105 ,30.691
+"Bournemouth, Christchurch and Poole",205 ,18.173
+Bracknell Forest,30 ,10.241
+Bradford,235 ,34.666
+Brent,30 ,25.558
+Brighton and Hove,105 ,20.761
+"Bristol, City of",220 ,26.363
+Bromley,35 ,14.163
+Buckinghamshire,105 ,10.052
+Bury,70 ,23.682
+Calderdale,95 ,26.351
+Cambridgeshire,170 ,13.858
+Camden,40 ,20.131
+Central Bedfordshire,60 ,12.152
+Cheshire East,120 ,14.475
+Cheshire West and Chester,100 ,18.083
+Cornwall,175 ,23.072
+County Durham,160 ,26.793
+Coventry,90 ,25.613
+Croydon,40 ,22.477
+Cumbria,170 ,21.261
+Darlington,40 ,25.657
+Derby,100 ,26.323
+Derbyshire,280 ,18.392
+Devon,180 ,16.607
+Doncaster,135 ,30.289
+Dorset,95 ,15.735
+Dudley,70 ,24.103
+Ealing,55 ,22.71
+East Riding of Yorkshire,90 ,15.605
+East Sussex,195 ,19.77
+Enfield,30 ,25.781
+Essex,350 ,17.016
+Gateshead,115 ,28.217
+Gloucestershire,135 ,14.932
+Greenwich,30 ,24.464
+Hackney,35 ,32.526
+Halton,90 ,32.325
+Hammersmith and Fulham,25 ,22.27
+Hampshire,355 ,12.693
+Haringey,30 ,27.956
+Harrow,30 ,15.031
+Hartlepool,60 ,35.037
+Havering,35 ,16.789
+"Herefordshire, County of",40 ,18.89
+Hertfordshire,205 ,12.732
+Hillingdon,50 ,18.223
+Hounslow,45 ,21.487
+Isle of Wight,45 ,23.294
+Islington,35 ,27.535
+Kensington and Chelsea,20 ,21.526
+Kent,560 ,19.538
+"Kingston upon Hull, City of",135 ,40.564
+Kingston upon Thames,25 ,11.381
+Kirklees,140 ,25.151
+Knowsley,110 ,43.006
+Lambeth,40 ,25.422
+Lancashire,430 ,23.443
+Leeds,200 ,27.301
+Leicester,85 ,30.877
+Leicestershire,130 ,12.33
+Lewisham,40 ,26.661
+Lincolnshire,210 ,20.29
+Liverpool,305 ,42.412
+Luton,70 ,25.908
+Manchester,190 ,40.005
+Medway,50 ,23.936
+Merton,25 ,14.649
+Middlesbrough,145 ,40.46
+Milton Keynes,55 ,17.98
+Newcastle upon Tyne,150 ,29.79
+Newham,30 ,29.577
+Norfolk,215 ,21.183
+North East Lincolnshire,50 ,31.335
+North Lincolnshire,65 ,22.096
+North Somerset,95 ,15.825
+North Tyneside,140 ,22.279
+North Yorkshire,170 ,14.762
+Northamptonshire,315 ,18.605
+Northumberland,175 ,22.079
+Nottingham,100 ,34.891
+Nottinghamshire,240 ,18.999
+Oldham,105 ,33.155
+Oxfordshire,180 ,11.656
+Peterborough,55 ,27.821
+Plymouth,80 ,26.619
+Portsmouth,105 ,26.899
+Reading,50 ,19.619
+Redbridge,20 ,17.203
+Redcar and Cleveland,80 ,29.792
+Richmond upon Thames,35 ,9.425
+Rochdale,80 ,34.415
+Rotherham,80 ,29.55
+Salford,140 ,34.21
+Sandwell,75 ,34.884
+Sefton,155 ,27.035
+Sheffield,110 ,27.06
+Shropshire,70 ,17.153
+Slough,25 ,22.965
+Solihull,55 ,17.37
+Somerset,190 ,18.553
+South Gloucestershire,90 ,11.66
+South Tyneside,80 ,31.509
+Southampton,85 ,26.876
+Southend-on-Sea,55 ,22.375
+Southwark,55 ,25.811
+St. Helens,130 ,31.518
+Staffordshire,265 ,16.567
+Stockport,90 ,20.826
+Stockton-on-Tees,90 ,25.79
+Stoke-on-Trent,105 ,34.504
+Suffolk,225 ,18.46
+Sunderland,75 ,30.586
+Surrey,240 ,10.087
+Sutton,35 ,13.987
+Swindon,105 ,18.622
+Tameside,110 ,31.374
+Telford and Wrekin,65 ,24.988
+Thurrock,35 ,20.928
+Torbay,60 ,28.104
+Tower Hamlets,50 ,27.913
+Trafford,70 ,16.088
+Wakefield,145 ,27.306
+Walsall,100 ,31.555
+Waltham Forest,25 ,25.209
+Wandsworth,45 ,16.611
+Warrington,130 ,18.942
+Warwickshire,165 ,15.64
+West Berkshire,20 ,9.952
+West Sussex,235 ,14.429
+Westminster,45 ,20.339
+Wigan,200 ,25.713
+Wiltshire,160 ,13.447
+Windsor and Maidenhead,30 ,8.376
+Wirral,245 ,29.589
+Wokingham,30 ,5.846
+Wolverhampton,85 ,32.102
+Worcestershire,145 ,18.089
+York,55 ,11.727
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
