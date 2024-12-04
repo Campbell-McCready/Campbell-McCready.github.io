@@ -1,14 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/drugagedata.csv"},
-  "width": 400,
+  "width": 600,
   "height": 300,
-  "encoding": {"x": {"field": "Date", "type": "temporal"}},
+  "encoding": {"x": {"field": "Date", "type": "temporal", "title": "Year"}},
   "layer": [
     {
       "encoding": {
         "color": {"field": "Age", "type": "nominal"},
-        "y": {"field": "Value", "type": "quantitative"}
+        "y": {"field": "Value", "type": "quantitative", "title": "Proportion of drug users"}
       },
       "layer": [
         {"mark": "line"},
@@ -27,8 +27,8 @@
         "tooltip": [
           {"field": "16-19", "type": "quantitative"},
           {"field": "20-24", "type": "quantitative"},
-          {"field": "25-30", "type": "quantitative"},
-          {"field": "30-35", "type": "quantitative"},
+          {"field": "25-29", "type": "quantitative"},
+          {"field": "30-34", "type": "quantitative"},
           {"field": "35-44", "type": "quantitative"},
           {"field": "45-54", "type": "quantitative"},
           {"field": "55-59", "type": "quantitative"}
