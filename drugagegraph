@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/drugagedata.csv"},
+  "width": 400,
+  "height": 300,
+  "encoding": {"x": {"field": "Date", "type": "temporal"}},
+  "layer": [
+    {
+      "encoding": {
+        "color": {"field": "Age", "type": "nominal"},
+        "y": {"field": "Value", "type": "quantitative"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {"transform": [{"filter": {"param": "hover", "empty": false}}], 
+        "mark": "point"}
+      ]
+    },
+    {
+      "transform": [{"pivot": "Age", "value": "Value", "groupby": ["Date"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "16-19", "type": "quantitative"},
+          {"field": "20-24", "type": "quantitative"},
+          {"field": "25-30", "type": "quantitative"},
+          {"field": "30-35", "type": "quantitative"},
+          {"field": "35-44", "type": "quantitative"},
+          {"field": "45-54", "type": "quantitative"},
+          {"field": "55-59", "type": "quantitative"}
+        ]
+      },
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "pointerover",
+          "clear": "pointerout"
+        }
+      }]
+    }
+  ]
+}
