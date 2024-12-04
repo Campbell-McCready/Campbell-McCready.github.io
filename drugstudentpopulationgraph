@@ -1,9 +1,9 @@
 { "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "Showing the correlation between a cities proportional student population and deaths from drug poisoning",
+  "description": "Showing the correlation between a cities student population and deaths from drug poisoning",
 
   "title": {
-    "text": "Plotting UK cities deaths by drug poisoning against it's proportional student population ",
+    "text": "Plotting UK cities deaths by drug poisoning against it's student population ",
     "subtitle":["2023, Data taken from the ONS",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -18,6 +18,13 @@
   
   "height": 300,
   "width": 600,
+
+  "transform":[
+    {"calculate": "toNumber(datum.deaths)",
+    "as": "deaths"},
+    {"calculate": "toNumber(datum.StudentPop)",
+    "as": "StudentPop"}
+  ],
 
   "layer":[ 
     {"encoding": {
