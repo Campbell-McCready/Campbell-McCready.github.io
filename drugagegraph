@@ -4,7 +4,7 @@
   "width": 400,
   "height": 300,
   "encoding": {"x": {"field": "Date", "type": "temporal", "title": "Year"}},
-  "title": {"text": "Proportion of drug users by age",
+  "title": {"text": "Drug use by age",
   "subtitle": ["Using data from the ONS"]},
 
   "transform": [
@@ -13,7 +13,7 @@
       {"filter": "datum.year>=minYear"},
       {"filter": "datum.year<=maxYear"},
 
-      {"calculate": "datum.CPIAUCSL_PC1/100", "as": "value"}
+      {"calculate": "datum.Value/100", "as": "Value"}
       
     ],
 
@@ -42,7 +42,8 @@
     {
       "encoding": {
         "color": {"field": "Age", "type": "nominal"},
-        "y": {"field": "Value", "type": "quantitative", "title": "Proportion of drug users"}
+        "y": {"field": "Value", "type": "quantitative", "title": "Proportion of drug users",
+        "axis": {"format": "%"}}
       },
       "layer": [
         {"mark": "line"},
