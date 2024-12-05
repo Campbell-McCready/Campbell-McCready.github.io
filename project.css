@@ -164,3 +164,15 @@ p {
   line-height: 1.8;
 }
 
+  .total {
+    margin: 3vw;
+  }
+}
+
+.total {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
