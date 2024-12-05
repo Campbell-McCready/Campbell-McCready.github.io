@@ -13,7 +13,7 @@
       {"filter": "datum.year>=minYear"},
       {"filter": "datum.year<=maxYear"},
 
-      {"calculate": "datum.CPIAUCSL_PC1/100", "as": "value"},
+      {"calculate": "datum.CPIAUCSL_PC1/100", "as": "value"}
       
     ],
 
