@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Illegal drug use, per year (excluding cannabis)",
+    "text": "Illegal drug use, per year ('000s, excluding cannabis)",
     "anchor": "middle",
     "subtitleFontWeight": "lighter"
   },
