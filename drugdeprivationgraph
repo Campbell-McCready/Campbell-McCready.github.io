@@ -38,7 +38,7 @@
     "y": {
       "field": "deaths", 
       "type": "quantitative",
-      "title":"Deaths from drug poisoning"
+      "title":"Drug related deaths"
       }
    },
     "mark": {
