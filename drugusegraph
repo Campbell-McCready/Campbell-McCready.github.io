@@ -40,8 +40,7 @@
       {"field":"Year", "title":"Year"},
       {"field":"Class"} ]},
 
-    "transform":[{"filter": "datum.Year == Year"},
-    {"calculate": "datum.Value*1000", "as": "Value"}],
+    "transform":[{"filter": "datum.Year == Year"}],
 
   "params": [
     {
