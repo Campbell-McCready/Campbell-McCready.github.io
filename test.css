@@ -61,24 +61,7 @@ img {
   text-align: center;
   display: block;
 }
-
-/*
-.hero .btn {
-  background: #6d2480;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-family: 'Poppins', sans-serif;
-}
-.hero .btn:hover {
-  background: #530a63;
-  transform: scale(1.05);
-}
-*/
-
-
+]
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: ##ffffff; 
