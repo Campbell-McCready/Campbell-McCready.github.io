@@ -22,6 +22,39 @@ body {
     margin-top: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.chart {
+  flex: 1;
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#chartGrid {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.vertical #chartGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 .page-title {
     font-size: 1.9rem;
