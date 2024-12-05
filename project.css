@@ -10,6 +10,18 @@ body {
   padding-top: 0px;
 }
 
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;               /* nav bar colour */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
   .container {
   display: flex;
   align-items: center;
