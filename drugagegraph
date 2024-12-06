@@ -11,7 +11,7 @@
       
       {"calculate": "year(datum.Date)", "as": "year"},
       {"filter": "datum.year>=minYear"},
-      {"filter": "datum.year<=maxYear"},
+      {"filter": "datum.year<=maxYear"}
       
     ],
 
