@@ -77,45 +77,45 @@
 <section>
     <div class="chart-description">
         <h2>How does drug use vary between age groups?</h2>
-        <p>Discuss drug use by age group</p>
+        <p>The first characteristic I’ll analyse is age. The graph below shows the proportion of drug users across seven groups in the working age range. You can use the sliders to see the change in trends over different years, and hovering over the lines will tell you the data for each age group in a given year:</p>
     </div>
     <div id="chartGrid">
             <figure class="chart" id="Location2"></figure> 
     </div>
     <div> 
-           <p>Discuss the graph </p>
+           <p>The graph tells us that the two youngest age groups, 16-19 and 20-24, consistently have the highest proportion of drug users. But why? Teenagers and young adults are likely to be surrounded by groups of other people their age who are beginning to experiment with drinking, smoking and drugs. Individuals can feel peer pressured to ‘look cool’ and do drugs in order fit in with their peers, leading to addiction. Another reason could be the increase in depression in the 16-24 age group, caused by the rising cost of living and recent COVID-19 pandemic. Individuals may use drug as an escape method to deal with their mental issues. Another reason could be that this is the university age range, which is commonly associated with drinking and drug use, I discuss this further in a later section.  </p>
     </div>
 </section>
 
 <section>
     <div class="chart-description">
         <h2>Is drug use correlated with income deprivation?</h2>
-        <p>Discuss drug use by income deprivation</p>
+        <p>The British Medical Association states that there is a strong association between socioeconomic position and illegal drug use. To test this, I used local income deprivation data from the ONS and plotted it against the number of drug-related deaths in each area. This data uses an income deprivation ‘score’ that takes the average number of income deprived people in a local authority proportional to the population. The lower the score, the less people who are income deprived. For example, Wokingham has a score of just 0.044, meaning it is on average considerably less income deprived than Blackpool, which has a score of 0.247.</p>
     </div>
     <div id="chartGrid">
             <figure class="chart" id="Location3"></figure> 
     </div>
     <div> 
-           <p>Discuss the graph </p>
+           <p>The line-of-best-fit is upwards sloping, suggesting that there is a positive correlation between income deprivation and drug-related deaths; as one grows, so does the other. Manchester, Liverpool and Blackpool are all standouts, having both a large number of drug related deaths and a high proportion of income depravity. The R2 value is 0.31, which suggests that although there is a correlation, it’s a fairly weak one. </p>
     </div>
 </section>
 
  <section>
     <div class="chart-description">
         <h2>Is drug use correlated with student population?</h2>
-        <p>Discuss drug use by student population</p>
+        <p>The correlation between lower-income areas and drug use is fairly accepted in society, but I wanted to test one of my own theories. As I mentioned previously I believe that a possible characteristic of drug use is social setting, specifically university. Those at university are more likely to meet a wider group of people, and are more likely to be in big cities where drug use is more prevalent. To test this, I plotted the same number of drug-related deaths against the student population of large university cities. </p>
     </div>
     <div id="chartGrid">
             <figure class="chart" id="Location4"></figure> 
     </div>
     <div> 
-           <p>Discuss the problems with using just the population</p>
+           <p>This data shows a line-of-best-fit with a much steeper gradient, and a larger R2 value of 0.42. Initially, I saw this as evidence to support my statement, but the more I thought about it, the more I considered a key omitted variable, population. I was regressing drug-deaths against student population, but a university in a large city is inevitably going to have more drug-related deaths due to the higher population. To solve this, I divided the student population of each city by the total population, giving the proportion of students in each city. I then ran the same regression as before: </p>
     </div>
          <div id="chartGrid">
             <figure class="chart" id="Location5"></figure> 
     </div>
      <div>
-            <p>Discuss how the proportion shows no correlation</p>
+            <p>The R2 of this graph is close to zero, suggesting there is little-to-no correlation. Along with this, the line-of-best-fit is downwards sloping, so even if the data was more correlated, it would suggest that as proportion of students grow, drug-related deaths decrease. This was sufficient evidence to disprove my theory, though in the future I’d like to perform more regressions on this topic using a 2SLS regression allowing me to include other omitted variables that I haven’t covered in this research study. </p>
     </div>
      
     </section>
@@ -123,19 +123,27 @@
  <section>
     <div class="chart-description">
         <h2>What is the cost of drug consumption to the UK economy?</h2>
-        <p>Discuss how we can break down the costs</p>
+        <p>The UK’s drug market imposes serious costs on the economy in a multitude of ways. These costs include:</p>
+        <ul> 
+        <li> Drug-related crime: costs incurred from crimes committed by individuals under the influence of drugs.</li>
+        <li> Costs to the NHS: These include the treatment of drug-related mental and behavioural disorders, drug overdoses, neonatal effects (foetuses and new-borns affected by maternal drug use) and IDU (the treatment of hepatitis-C and AIDS from needle use). </li>
+        <li> Drug-related deaths.</li>
+        <li> Drug treatment costs.</li>
+        <li> Enforcement costs. </li>
+        </ul>
+        <p>Below we can see these costs broken down into a pie chart:</p>
     </div>
     <div id="chartGrid">
             <figure class="chart" id="Location7"></figure> 
     </div>
     <div> 
-           <p>Discuss the graph and how we can break it down even further</p>
+           <p>We can also split these costs down further to analyse the secondary costs that make up the total cost: </p>
     </div>
          <div id="chartGrid">
             <figure class="chart" id="Location8"></figure> 
     </div>
         <div>
-            <p>Discuss the graphs</p>
+            <p>If the government want to prevent further costs, they must focus on these key components and devise strategies to solve the issues. For example, if we use our characteristics from earlier, the government can introduce educational and cautionary material targeted at the 16-24 age range to encourage them to resist drug use. They could also focus on supporting less deprived communities to prevent drug use from becoming a more serious issue.</p>
     </div>
 
 </section>
@@ -143,14 +151,14 @@
 <section>
     <div class="chart-description">
         <h2>Conclusion</h2>
-        <p>Write the conclusion</p>
+        <p>To conclude, we’ve successfully proven that younger people tend to consume more illegal drugs, and also proved there is a positive correlation between income deprivation and drug use. We’ve also rejected the assumption that there is a correlation between university student population and drug use. Finally, we’ve broken down the multiple costs drug use imposes on the UK’s economy, and discussed strategies the government could introduce to combat the use of illegal substances, improving both social welfare and the economy.</p>
     </div>
 </section>
 
 <section>
     <div class="chart-description">
         <h2>Sources</h2>
-        <p>Write the conclusion</p>
+        <p>W</p>
     </div>
 </section>
 
