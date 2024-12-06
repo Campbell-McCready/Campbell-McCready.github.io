@@ -20,7 +20,7 @@
     "color": {"field": "Cost", "type": "nominal",
     "scale":{
       "domain": ["Drug-Related crime","Drug-related deaths","Drug treatment","Enforcement costs","NHS costs"],
-      "range": ["#F5921B","#72b4eb","#0a417a","#63993D","indigo"]
+      "range": ["#876FD4","#72b4eb","#0a417a","#F8AE54","#63993D"]
     }},
 
 
