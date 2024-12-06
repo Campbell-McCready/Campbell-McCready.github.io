@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/drugcostdata.csv"},
+  "title": {
+  "text": "The social and economic cost of drug use",
+    "subtitle": [
+      "Source: Home Office",
+      ""]},
+
+  "mark": {"type": "arc", "innerRadius": 50},
+    "transform": [
+    {
+      "calculate": "toNumber(datum.Value)",
+      "as": "Value"
+    }
+  ],
+  "encoding": {
+    "theta": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Cost", "type": "nominal",
+    "scale":{
+      "domain": ["Drug-Related crime","Drug-related deaths","Drug treatment","Enforcement costs","NHS costs"],
+      "range": ["#F5921B","#72b4eb","#0a417a","#63993D","indigo"]
+    }},
+
+
+    "order": {"field": "Value", "type": "quantitative", "sort": "ascending"},
+    "tooltip": [ 
+      {"field": "Cost",
+      "title": "Category"},
+      {"field": "Value",
+      "title": "Cost (£millions)"}],
+        "opacity": {
+      "condition": {"param": "hover", "value": 1},
+      "value": 0.5
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["Cost"],
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
+    }
+  ]
+}
