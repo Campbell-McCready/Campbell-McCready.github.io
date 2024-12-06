@@ -12,8 +12,6 @@
       {"calculate": "year(datum.Date)", "as": "year"},
       {"filter": "datum.year>=minYear"},
       {"filter": "datum.year<=maxYear"},
-
-      {"calculate": "datum.Value/100", "as": "Value"}
       
     ],
 
@@ -42,8 +40,7 @@
     {
       "encoding": {
         "color": {"field": "Age", "type": "nominal"},
-        "y": {"field": "Value", "type": "quantitative", "title": "Proportion of drug users",
-        "axis": {"format": "%"}}
+        "y": {"field": "Value", "type": "quantitative", "title": "Proportion of drug users"}
       },
       "layer": [
         {"mark": "line"},
