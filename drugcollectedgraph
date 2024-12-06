@@ -1,1 +1,141 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "data": {"url": "https://raw.githubusercontent.com/campbell-mccready/campbell-mccready.github.io/main/drugcollectedcosts.csv"},
 
+ "hconcat":[
+ 
+ {"title": {
+  "text": "Costs of drug-related crime",
+    "subtitle": [
+      ""]},
+
+  "mark": {"type": "arc", "innerRadius": 50},
+    "transform": [
+    {
+      "calculate": "toNumber(datum.Crimevalue)",
+      "as": "Crimevalue"
+    }
+  ],
+  "encoding": {
+    "theta": {"field": "Crimevalue", "type": "quantitative"},
+    "color": {"field": "Crimecost", "type": "nominal",
+    "scale":{
+      "domain": ["Vehicle theft","Burglary","Robbery","Other theft","Fraud","Drug-related disorders","Drug overdoses","Drug-related neonatal","IDU","Policing","Criminal justice system","UK border agency"],
+      "range": ["#B6A6E9","#876FD4","#5E40BE","#3D2785","#21134D","#204D00","#3D7317","#63993D","#87BB62","#F8AE54","#CA6C0F","#9E4A06"]
+    }},
+
+
+    "order": {"field": "Crimevalue", "type": "quantitative", "sort": "ascending"},
+    "tooltip": [ 
+      {"field": "Crimecost",
+      "title": "Category"},
+      {"field": "Crimevalue",
+      "title": "Cost (£millions)"}],
+        "opacity": {
+      "condition": {"param": "hover", "value": 1},
+      "value": 0.5
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["Crimecost"],
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
+    }
+  ]
+}, 
+
+{"title": {
+  "text": "Costs to the NHS of drug related illnesses",
+    "subtitle": [
+      ""]},
+
+  "mark": {"type": "arc", "innerRadius": 50},
+    "transform": [
+    {
+      "calculate": "toNumber(datum.NHSvalue)",
+      "as": "NHSvalue"
+    }
+  ],
+  "encoding": {
+    "theta": {"field": "NHSvalue", "type": "quantitative"},
+    "color": {"field": "NHScost", "type": "nominal",
+    },
+
+
+    "order": {"field": "NHSvalue", "type": "quantitative", "sort": "ascending"},
+    "tooltip": [ 
+      {"field": "NHScost",
+      "title": "Category"},
+      {"field": "NHSvalue",
+      "title": "Cost (£millions)"}],
+        "opacity": {
+      "condition": {"param": "hover", "value": 1},
+      "value": 0.5
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["NHScost"],
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
+    }
+  ]
+},
+
+{"title": {
+  "text": "Costs of drug enforcement",
+    "subtitle": [
+      ""]},
+
+  "mark": {"type": "arc", "innerRadius": 50},
+    "transform": [
+    {
+      "calculate": "toNumber(datum.Enforcementvalue)",
+      "as": "Enforcementvalue"
+    }
+  ],
+  "encoding": {
+    "theta": {"field": "Enforcementvalue", "type": "quantitative"},
+    "color": {"field": "Enforcementcost", "type": "nominal",
+    "legend": {"title": "Key"}
+    },
+
+
+    "order": {"field": "Enforcementvalue", "type": "quantitative", "sort": "ascending"},
+    "tooltip": [ 
+      {"field": "Enforcementcost",
+      "title": "Category"},
+      {"field": "Enforcementvalue",
+      "title": "Cost (£millions)"}],
+        "opacity": {
+      "condition": {"param": "hover", "value": 1},
+      "value": 0.5
+    }
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["Enforcementcost"],
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
+    }
+  ]
+},
+
+
+
+
+]}
